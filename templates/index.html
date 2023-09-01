@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>The Reddit Bot</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">The Reddit Bot</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Project Pipeline</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cases">Use Cases</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#data">About the data</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Meet the Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">The Reddit Bot</h1>
+                        <h2 class="text-white mx-auto mt-2 mb-5">by the Captivating Cupcakes team</h2>
+                        <a class="btn btn-primary" href="{{url_for('results')}}">Try it out!</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">About The Reddit Bot</h2>
+                        <p class="text-white-50">
+                            The reddit bot is an AI text generator for the sole purpose of making people mad online on reddit. it utilizes many different softwares and datasets for running the different functions of the AI. you can import 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('static', filename='assets/img/d.jpg') }}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Project Pipeline</h4>
+                            <p class="text-black-50 mb-0">Our models work in conjunction with each other. First, the comment bot will make a controversial post/comment on a subject chosen by the user, then the second model will argue with itself based on the initial post.
+
+Also, the user can make their own comment/post and the bot will argue with itself over that. 
+                              </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="cases">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ url_for('static', filename='assets/img/579451-monochrome-computer.jpg') }}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Use Cases and Expansions</h4>
+                                    <p class="mb-0 text-white-50">Some uses cases for our bot include: 
+Discovering new perspectives, carefully designed to anger you
+To quench your thirst for controversial and violent discussion
+Creating an argument to use against your friends
+We could expand by:
+Increasing the conversation length
+Training the model for a longer time period, improving the responses it outputs 
+Collecting data from a larger variety of datasets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center" id='data'>
+                    <div class="col-lg-6"><img class="img-fluid" src="https://media.istockphoto.com/id/1224500457/photo/programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg?s=170667a&w=0&k=20&c=qW7X_WhA9tVI-XxMc63mIo4N95VCxdQDO3U9Atw5g0s=" style="width:650px;height:600px;" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">About the data</h4>
+                                    <p class="mb-0 text-white-50">We used three different datasets. The first one is "1 million Reddit comments from 40 subreddits.
+ It is a very large dataset with a ton of reddit comments from a variety of subreddits. Posts in this dataset are not only categorized with a controversiality metric, but the         amount of up/downvotes is also included. This makes it perfect for what we need, because we can use the most controversial posts and the posts with the most downvotes<br>
+<br>
+The other two datasets are pretty similar - THRED and r/CasualConversations. This datasets include conversations between multiple people. This is great for what we want, since this is a conversation bot. Because of the type of data this is, the bot will be able to hold a conversation rather than give a single response.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+
+         <header class="bg-primary text-center py-5 mb-5 mt-5">
+  <div class="container" id="team">
+    <h1 style="font-family:Gill Sans" class="fw-light text-white font-family">Meet the (Professional*) Idiots Behind This</h1>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static', filename='assets/img/reese.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Reese</h5>
+          <div class="card-text text-black-50">
+            Front End Developer. Dog Lover.
+            Human Being.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static', filename='assets/img/theo.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Theo</h5>
+          <div class="card-text text-black-50">
+            MLE & Front End Devloper, Cat Enjoyer
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static', filename='assets/img/kunal.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Kunal</h5>
+          <div class="card-text text-black-50">
+            MLE + Backend. 
+            Likes piano and nature
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src=" {{ url_for('static', filename='assets/img/ata.png') }} " class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Ata</h5>
+          <div class="card-text text-black-50">
+            Backend +  Project Manager, Eats food, Sleeps, Definitely not a human.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team Member 5 -->
+  <div class="d-flex justify-content-center align-items-center" style="min-height: 20vh;">
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="https://source.unsplash.com/7u5mwbu7qLg/500x350" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Taro</h5>
+          <div class="card-text text-black-50">
+            The only person keeping us from making this entire site a troll
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; AI Camp</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
